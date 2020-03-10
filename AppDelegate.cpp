@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
-#include "KeyboardScene.h"
+#include "KeyboardScene2.h"
+//#include "KeyboardScene.h"
 //#include "MouseScene.h"
 //#include "GraphicsScene.h"
 //#include "MultiTouchScene.h"
@@ -23,7 +24,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
         //glview->setFrameSize(640, 480);
         director->setOpenGLView(glview);
     }
-    auto scene = KeyboardScene::createScene();
+    auto scene = KeyboardScene2::createScene();
+    //auto scene = KeyboardScene::createScene();
     //auto scene = MouseScene::createScene();
     //auto scene = TouchScene::createScene();
     //auto scene = GraphicsScene::createScene();

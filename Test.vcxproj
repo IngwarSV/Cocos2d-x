@@ -153,6 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="GraphicsScene.cpp" />
     <ClCompile Include="KeyboardScene.cpp" />
+    <ClCompile Include="KeyboardScene2.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MouseScene.cpp" />
     <ClCompile Include="MultiTouchScene.cpp" />
@@ -162,6 +163,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="GraphicsScene.h" />
     <ClInclude Include="KeyboardScene.h" />
+    <ClInclude Include="KeyboardScene2.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="MouseScene.h" />
     <ClInclude Include="MultiTouchScene.h" />
