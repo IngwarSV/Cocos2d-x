@@ -22,6 +22,7 @@ bool MouseScene::init()
     listener->onMouseDown = [](cocos2d::Event* event) {
 
         try {
+            //you need to cast the provided Event pointer to a EventMouse pointer to get access to the mouse details
             EventMouse* mouseEvent = dynamic_cast<EventMouse*>(event);
             mouseEvent->getMouseButton();
             std::stringstream message;
@@ -53,3 +54,7 @@ bool MouseScene::init()
 
     return true;
 }
+
+//Gesture’s arent actually supported out of the box, but extensions exist. Additionally, 
+//all mouse and touch events contain delta information as well as data on the previous touch / click, 
+//which should make rolling your own fairly simple.

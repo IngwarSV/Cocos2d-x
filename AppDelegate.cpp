@@ -5,6 +5,9 @@
 //#include "GraphicsScene.h"
 //#include "MultiTouchScene.h"
 //#include "TouchScene.h"
+//#include "TouchScene2.h"
+//#include "CarAction.h"
+#include "CarAction2.h"
 
 USING_NS_CC;
 
@@ -30,7 +33,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLViewImpl::create("Hello World");
         //set the resolution of the window 
         //( this is not required, I just wanted a smaller resolution for screen shots ) by calling setFrameSize()
-        glview->setFrameSize(640, 480);
+        //glview->setFrameSize(640, 480);
         //set the view as active
         director->setOpenGLView(glview);
     }
@@ -38,7 +41,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //auto scene = KeyboardScene::createScene();
     //auto scene = MouseScene::createScene();
     //auto scene = TouchScene::createScene();
-    auto scene = GraphicsScene::createScene();
+    //auto scene = TouchScene2::createScene();
+    //auto scene = GraphicsScene::createScene();
+    //auto scene = MultiTouch::createScene();
+    //auto scene = CarAction::createScene();
+    auto scene = CarAction2::createScene();
+
     director->runWithScene(scene);
 
     return true;

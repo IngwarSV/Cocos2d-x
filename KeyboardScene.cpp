@@ -19,13 +19,18 @@ bool KeyboardScene::init()
     }
 
     auto sprite = Sprite::create("HelloWorld.png");
+    // returns the untransformed size of the node - layer KeyboardScene in this case
     sprite->setPosition(this->getContentSize().width / 2, this->getContentSize().height / 2);
 
     this->addChild(sprite, 0);
 
     auto eventListener = EventListenerKeyboard::create();
        
-
+    /*The first paramater passed in is the EventKeyboard::KeyCode enum, 
+    which is a value representing the key that was pressed.
+    The second value was the Event target, in this case our sprite.
+    We use the Event pointer to get the target Nodeand update 
+    it’s position in a direction depending on which key is pressed*/
     eventListener->onKeyPressed = [](EventKeyboard::KeyCode keyCode, Event* event) {
 
         Vec2 loc = event->getCurrentTarget()->getPosition();

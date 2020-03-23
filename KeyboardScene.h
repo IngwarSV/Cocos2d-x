@@ -9,7 +9,4 @@ public:
     virtual bool init();
 
     CREATE_FUNC(KeyboardScene);
-
-//private:
-//    cocos2d::Label* labelTouchInfo;
 };

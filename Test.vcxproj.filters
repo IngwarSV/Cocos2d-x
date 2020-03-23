@@ -30,12 +30,17 @@
     <ClCompile Include="MultiTouchScene.cpp">
       <Filter>win32</Filter>
     </ClCompile>
-    <ClCompile Include="TouchScene.cpp">
-      <Filter>win32</Filter>
-    </ClCompile>
     <ClCompile Include="KeyboardScene2.cpp">
       <Filter>win32</Filter>
     </ClCompile>
+    <ClCompile Include="TouchScene.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchScene2.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="CarAction.cpp" />
+    <ClCompile Include="CarAction2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -56,12 +61,17 @@
     <ClInclude Include="MultiTouchScene.h">
       <Filter>win32</Filter>
     </ClInclude>
-    <ClInclude Include="TouchScene.h">
-      <Filter>win32</Filter>
-    </ClInclude>
     <ClInclude Include="KeyboardScene2.h">
       <Filter>win32</Filter>
     </ClInclude>
+    <ClInclude Include="TouchScene.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchScene2.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="CarAction.h" />
+    <ClInclude Include="CarAction2.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

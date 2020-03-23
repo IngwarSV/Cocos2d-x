@@ -24,7 +24,9 @@ bool KeyboardScene2::init()
     auto eventListener = EventListenerKeyboard::create();
 
 
-
+    /*Input Manager Editor (рус. Ђ–едакторы метода вводаї). Input Method Editor (IME) Ч 
+    это программа или компонент операционной системы, позвол€ющий пользовател€м вводить символы, 
+    которые физически отсутствую на клавиатуре.*/
     Director::getInstance()->getOpenGLView()->setIMEKeyboardState(true);
     eventListener->onKeyPressed = [=](EventKeyboard::KeyCode keyCode, Event* event) {
         // If a key already exists, do nothing as it will already have a time stamp
