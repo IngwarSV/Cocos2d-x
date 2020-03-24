@@ -7,7 +7,8 @@
 //#include "TouchScene.h"
 //#include "TouchScene2.h"
 //#include "CarAction.h"
-#include "CarAction2.h"
+//#include "CarAction2.h"
+#include "CarAction3.h"
 
 USING_NS_CC;
 
@@ -45,7 +46,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //auto scene = GraphicsScene::createScene();
     //auto scene = MultiTouch::createScene();
     //auto scene = CarAction::createScene();
-    auto scene = CarAction2::createScene();
+    //auto scene = CarAction2::createScene();
+    auto scene = CarAction3::createScene();
 
     director->runWithScene(scene);
 

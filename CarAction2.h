@@ -2,7 +2,9 @@
 
 #include "cocos2d.h"
 
-class CarAction2 : public cocos2d::Layer
+//Instead of our scene inheriting from Layer we instead inherit from LayerColor, 
+//which adds, you guessed it, color information
+class CarAction2 : public cocos2d::LayerColor
 {
 public:
     static cocos2d::Scene* createScene();

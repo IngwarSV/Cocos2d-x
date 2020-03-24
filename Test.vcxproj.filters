@@ -41,6 +41,7 @@
     </ClCompile>
     <ClCompile Include="CarAction.cpp" />
     <ClCompile Include="CarAction2.cpp" />
+    <ClCompile Include="CarAction3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -72,6 +73,7 @@
     </ClInclude>
     <ClInclude Include="CarAction.h" />
     <ClInclude Include="CarAction2.h" />
+    <ClInclude Include="CarAction3.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
